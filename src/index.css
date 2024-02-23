@@ -1,0 +1,31 @@
+.App-header{
+    border: 5px solid black;
+    border-radius: 15px;
+    min-width: none;
+    min-height: 750px;
+    background-color: cadetblue;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    padding: 10 px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+table{
+    border: 2px solid rgb(237, 237, 237);
+    padding: 1px;
+    min-width: 500px;
+}
+th{
+    border: 2px solid black;
+    padding: 5px;
+    background-color: darkgreen;
+}
+td{
+    border: 2px solid black;
+    padding: 5px; 
+}
