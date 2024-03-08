@@ -6,19 +6,36 @@
     background-color: cadetblue;
     text-decoration: none;
 }
+header{
+    min-height: 50px;
+    background-color: mintcream;
+    box-shadow: inset 10px -12px 62px 0px rgba(0,0,0,1);
 
-a{
-    text-decoration: none;
-    padding: 10 px;
+}
+header > img{
+    height: 65px;
+    position: right;
+    border-radius: 20px;
+    margin-top: 7px;
+    margin-left: 10px;
+    box-shadow: inset 10px -12px 62px -1px rgba(255,255,5,1);
+}
+header > a{
+    padding: 20px;
+    display: inline-block;
+    margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 15px;
     margin-right: 10px;
+    text-decoration: none;
+    box-shadow: 10px 9px 5px 0px rgba(0,0,0,1);
 }
 
 table{
     border: 2px solid rgb(237, 237, 237);
-    padding: 1px;
+    padding: 5px;
     min-width: 500px;
+    margin: 20px;
 }
 th{
     border: 2px solid black;
@@ -28,4 +45,17 @@ th{
 td{
     border: 2px solid black;
     padding: 5px; 
+}
+button{
+    padding: 10px;
+    width: 100%;
+}
+button.hover{
+    background-color: rgb(235, 0, 0);
+}
+
+input{
+    width: 95%;
+    height: auto;
+    min-height: 25px;
 }
