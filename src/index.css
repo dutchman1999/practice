@@ -1,4 +1,4 @@
-.App-header{
+.App-header {
     border: 5px solid black;
     border-radius: 15px;
     min-width: none;
@@ -6,21 +6,24 @@
     background-color: cadetblue;
     text-decoration: none;
 }
-header{
+
+header {
     min-height: 50px;
     background-color: mintcream;
-    box-shadow: inset 10px -12px 62px 0px rgba(0,0,0,1);
+    box-shadow: inset 10px -12px 62px 0px rgba(0, 0, 0, 1);
 
 }
-header > img{
+
+header>img {
     height: 65px;
     position: right;
     border-radius: 20px;
     margin-top: 7px;
     margin-left: 10px;
-    box-shadow: inset 10px -12px 62px -1px rgba(255,255,5,1);
+    box-shadow: inset 10px -12px 62px -1px rgba(255, 255, 5, 1);
 }
-header > a{
+
+header>a {
     padding: 20px;
     display: inline-block;
     margin-top: 10px;
@@ -28,33 +31,37 @@ header > a{
     margin-bottom: 15px;
     margin-right: 10px;
     text-decoration: none;
-    box-shadow: 10px 9px 5px 0px rgba(0,0,0,1);
+    box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 1);
 }
 
-table{
+table {
     border: 2px solid rgb(237, 237, 237);
     padding: 5px;
     min-width: 500px;
     margin: 20px;
 }
-th{
+
+th {
     border: 2px solid black;
     padding: 5px;
     background-color: darkgreen;
 }
-td{
+
+td {
     border: 2px solid black;
-    padding: 5px; 
+    padding: 5px;
 }
-button{
+
+button {
     padding: 10px;
     width: 100%;
 }
-button.hover{
+
+button.hover {
     background-color: rgb(235, 0, 0);
 }
 
-input{
+input {
     width: 95%;
     height: auto;
     min-height: 25px;

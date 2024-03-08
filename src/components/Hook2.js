@@ -23,19 +23,20 @@ const Hook2 = () => {
             {
 
 
-                        <div>
-                            <table align="right">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Name</th>
-                                        <th>Class</th>
-                                        <th>Subjects</th>
-                                        <th>Fees</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                               { newAdmission.map((studentDetails, index) => { return(
+                <div>
+                    <table align="right">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Class</th>
+                                <th>Subjects</th>
+                                <th>Fees</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {newAdmission.map((studentDetails, index) => {
+                                return (
                                     <tr key={index}>
                                         <td>{index}</td>
                                         <td>{studentDetails.name}</td>
@@ -43,13 +44,14 @@ const Hook2 = () => {
                                         <td>{studentDetails.sub}</td>
                                         <td>{studentDetails.fees}</td>
                                     </tr>
-                                )})}
-                                </tbody>
-                            </table>
+                                )
+                            })}
+                        </tbody>
+                    </table>
 
 
-                        </div>
-                    
+                </div>
+
 
             }
 
@@ -73,7 +75,7 @@ const Hook2 = () => {
                     </tr>
                     <tr>
                         <th colSpan={2} className="saveButton">
-                            <button  align="center" onClick={saveFormData}><b>Save</b> </button>
+                            <button align="center" onClick={saveFormData}><b>Save</b> </button>
                         </th>
                     </tr>
                 </thead>
