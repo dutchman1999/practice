@@ -1,10 +1,12 @@
 .App-header {
-    border: 5px solid black;
+    border: 1px solid black;
     border-radius: 15px;
     min-width: none;
     min-height: 750px;
     background-color: cadetblue;
     text-decoration: none;
+    box-shadow: 15px -12px 62px 10px rgba(0, 0, 0, 1);
+
 }
 
 header {

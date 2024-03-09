@@ -15,7 +15,10 @@ const Hook2 = () => {
         setSub('');
         setFees("");
     }
-
+    const deleteOnclick = (index) => {
+        newAdmission.splice(index, 1)
+        setNewAdmission([...newAdmission]);
+    }
     return (
         <div>
             <h1> Student Form Fill-up </h1>
@@ -32,6 +35,7 @@ const Hook2 = () => {
                                 <th>Class</th>
                                 <th>Subjects</th>
                                 <th>Fees</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,7 +47,11 @@ const Hook2 = () => {
                                         <td>{studentDetails.Class}</td>
                                         <td>{studentDetails.sub}</td>
                                         <td>{studentDetails.fees}</td>
+                                        <td>
+                                            <button onClick={deleteOnclick.bind(this, index)} > Delete</button>
+                                        </td>
                                     </tr>
+
                                 )
                             })}
                         </tbody>
@@ -78,6 +86,7 @@ const Hook2 = () => {
                             <button align="center" onClick={saveFormData}><b>Save</b> </button>
                         </th>
                     </tr>
+
                 </thead>
 
             </table>
