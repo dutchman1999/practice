@@ -7,8 +7,8 @@ import Employee from './components/employee';
 import Customer from './components/customer';
 import Items from './components/item';
 import { HashRouter, Route, Routes, Link } from 'react-router-dom';
-import Hook from './components/Hook';
-import Hook2 from './components/Hook2';
+import SignIn from './components/signIn';
+import Hook2 from './components/StudentFormFill';
 function App() {
   return (
     <div className="App">
@@ -20,7 +20,7 @@ function App() {
             <Link to="/Employee"> Employee </Link>
             <Link to="/Customer"> Customer </Link>
             <Link to="/Items"> Items </Link>
-            <Link to="/Hook">Hook</Link>
+            <Link to="/SignIn">Sign-In</Link>
             <Link to="/FormFillup">Form Fill-up</Link>
             <img align='left' src="https://blog.tubikstudio.com/wp-content/uploads/2016/10/horsy_animation_logo_tubik_studio-1.gif" alt="bug" height={100} />
           </header>
@@ -30,7 +30,7 @@ function App() {
             <Route exact path='/Employee' element={<Employee />}>  </Route>
             <Route exact path='/Customer' element={<Customer />}>  </Route>
             <Route exact path='/Items' element={<Items />} > </Route>
-            <Route exact path='/Hook' element={<Hook />} ></Route>
+            <Route exact path='/SignIn' element={<SignIn />} ></Route>
             <Route exact path='/FormFillup' element={<Hook2 />}></Route>
           </Routes>
         </HashRouter>

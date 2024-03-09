@@ -15,20 +15,20 @@ const cities = [
     "San Jose"
 ];
     return(
-        <fieldset>
-            <legend> <h1> List of cities </h1></legend>
+        <div>
+            <h1> List of cities </h1>
             <p>
                 { cities.map(
                     (cityName,index)=>{
                         return(
-                            <div>
+                            <div className="leftAlign">
                                 <p>{index}. {cityName}</p>
                             </div>
                         )
                     }
                 )}
             </p>
-        </fieldset>
+        </div>
     )
 }
 export default Cities;

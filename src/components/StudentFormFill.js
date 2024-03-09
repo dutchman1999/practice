@@ -6,7 +6,6 @@ const Hook2 = () => {
     let [sub, setSub] = useState('');
     let [fees, setFees] = useState('');
 
-
     const saveFormData = () => {
         let inputFields = { name: name, Class: Class, sub: sub, fees: fees };
         setNewAdmission(inputFields = [...newAdmission, inputFields]);
@@ -15,26 +14,37 @@ const Hook2 = () => {
         setSub('');
         setFees("");
     }
+
     const deleteOnclick = (index) => {
         newAdmission.splice(index, 1)
         setNewAdmission([...newAdmission]);
     }
+
+    const editOnclick= (index,studentDetails)=>{
+        setName(studentDetails.name);
+        setClass(studentDetails.Class);
+        setFees(studentDetails.fees);
+        setSub(studentDetails.sub);
+
+    }
+
     return (
         <div>
-            <h1> Student Form Fill-up </h1>
-            <h1> Newly admission students are : Total: {newAdmission.length} </h1>
             {
 
 
                 <div>
                     <table align="right">
                         <thead>
+                            <p align= "center"> New students are : {newAdmission.length} </p>
+
                             <tr>
                                 <th>Id</th>
                                 <th>Name</th>
                                 <th>Class</th>
                                 <th>Subjects</th>
                                 <th>Fees</th>
+                                <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
                         </thead>
@@ -47,6 +57,9 @@ const Hook2 = () => {
                                         <td>{studentDetails.Class}</td>
                                         <td>{studentDetails.sub}</td>
                                         <td>{studentDetails.fees}</td>
+                                        <td>
+                                            <button onClick={editOnclick.bind(this, index, studentDetails)} > Edit</button>
+                                        </td>
                                         <td>
                                             <button onClick={deleteOnclick.bind(this, index)} > Delete</button>
                                         </td>
@@ -65,6 +78,8 @@ const Hook2 = () => {
 
             <table align="left">
                 <thead>
+            <h1 align="center"> Entry Form </h1>
+
                     <tr>
                         <th>Name</th>
                         <input type="text" onChange={(e) => { setName(e.target.value) }} value={name}></input>
@@ -82,9 +97,7 @@ const Hook2 = () => {
                         <input type="text" onChange={(e) => { setFees(e.target.value) }} value={fees} ></input>
                     </tr>
                     <tr>
-                        <th colSpan={2} className="saveButton">
                             <button align="center" onClick={saveFormData}><b>Save</b> </button>
-                        </th>
                     </tr>
 
                 </thead>
