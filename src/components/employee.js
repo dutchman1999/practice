@@ -9,8 +9,6 @@ const Employee = ()=>{
     return(
         <fieldset>
             <legend>  <h1> The total number of employees available {employees.length} </h1></legend>
-
-                
                  <table  >
                     <thead>
                         <tr>
